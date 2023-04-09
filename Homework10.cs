@@ -55,3 +55,14 @@ string[] CreateNewArray(string[] array, int count)
     }
     return Array;
 }
+
+Console.WriteLine ("Input array size:");
+int size = Convert.ToInt32(Console.ReadLine());
+
+string[] array = CreateArray(size);
+Console.WriteLine($"The initial array:");
+ShowArray(array);
+int SizeNewArray = Check(array);
+string[] Array = CreateNewArray(array, SizeNewArray);
+Console.WriteLine($"The required array:");
+ShowArray(Array);
