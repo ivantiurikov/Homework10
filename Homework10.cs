@@ -40,3 +40,18 @@ int Check(string[] array)
     }
     return count;
 }
+
+string[] CreateNewArray(string[] array, int count)
+{
+    string[] Array = new string[count];
+    int j = 0;
+    for(int i=0;i<array.Length;i++)
+    {
+        if(array[i].Length <= 3)
+        {
+            Array[j] = array[i];
+            j++;
+        }
+    }
+    return Array;
+}
